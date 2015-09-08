@@ -1,0 +1,6 @@
+ba8486fff9f02c6ee6227945f03458a1fdaae711	not-for-merge	branch 'feature/atomic-many-updates' of git://github.com/doctrine/mongodb-odm
+c62b532a886e6a76d5668a5af19a8590fa635ba7	not-for-merge	branch 'fix/remove-embedded-doc-complexity' of git://github.com/doctrine/mongodb-odm
+ac874750ba72b1bac7cc63bf28ebfe080f7d2ab9	not-for-merge	branch 'gh-841' of git://github.com/doctrine/mongodb-odm
+cb5cb484de005355a68d26a1728cc6cbc050a7c1	not-for-merge	branch 'gh606' of git://github.com/doctrine/mongodb-odm
+683728eb0b4723dd5551686addc724f8f1b13afe	not-for-merge	branch 'master' of git://github.com/doctrine/mongodb-odm
+fe0ed9d339ee4034f43d2f12d46c73ae0d76041e	not-for-merge	branch 'requireIndexes-segfault' of git://github.com/doctrine/mongodb-odm

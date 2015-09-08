@@ -1,0 +1,168 @@
+[production]
+
+; --------------------------
+; PHP Specific Configuration
+; --------------------------
+phpSettings.display_startup_errors = 0
+phpSettings.display_errors = 0
+
+includePaths.library = APPLICATION_PATH "/../library"
+
+
+; ----------------------------------------
+; Zend Framework Application Configuration
+; ----------------------------------------
+bootstrap.path = APPLICATION_PATH "/Bootstrap.php"
+bootstrap.class = "Bootstrap"
+
+pluginPaths.Bisna\Application\Resource\ = "Bisna/Application/Resource"
+
+autoloaderNamespaces[] = Bisna
+autoloaderNamespaces[] = Application\Entity
+
+appnamespace = "Application"
+
+
+; ------------------------------
+; Front Controller Configuration
+; ------------------------------
+
+resources.frontController.controllerDirectory = APPLICATION_PATH "/controllers"
+resources.frontController.params.displayExceptions = 0
+
+
+; ------------------------------------------------------------------------------
+; Doctrine Class Loader Configuration
+; ------------------------------------------------------------------------------
+
+resources.doctrine.classLoader.loaderClass = "Doctrine\Common\ClassLoader"
+resources.doctrine.classLoader.loaderFile  = APPLICATION_PATH "/../library/vendor/doctrine/common/lib/Doctrine/Common/ClassLoader.php"
+
+resources.doctrine.classLoader.loaders.doctrine_common.namespace   = "Doctrine\Common"
+resources.doctrine.classLoader.loaders.doctrine_common.includePath = APPLICATION_PATH "/../library/vendor/doctrine/common/lib/Doctrine/Common"
+
+resources.doctrine.classLoader.loaders.doctrine_dbal.namespace   = "Doctrine\DBAL"
+resources.doctrine.classLoader.loaders.doctrine_dbal.includePath = APPLICATION_PATH "/../library/vendor/doctrine/dbal/lib/Doctrine/DBAL"
+
+resources.doctrine.classLoader.loaders.doctrine_orm.namespace   = "Doctrine\ORM"
+resources.doctrine.classLoader.loaders.doctrine_orm.includePath = APPLICATION_PATH "/../library/vendor/doctrine/orm/lib/Doctrine/ORM"
+
+resources.doctrine.classLoader.loaders.symfony_console.namespace   = "Symfony\Component\Console"
+resources.doctrine.classLoader.loaders.symfony_console.includePath = APPLICATION_PATH "/../library/vendor/symfony/console/Symfony/Component/Console"
+
+resources.doctrine.classLoader.loaders.symfony_yaml.namespace   = "Symfony\Component\Yaml"
+resources.doctrine.classLoader.loaders.symfony_yaml.includePath = APPLICATION_PATH "/../library/vendor/Doctrine/lib/vendor"
+
+; ------------------------------------------------------------------------------
+; Doctrine Cache Configuration
+; ------------------------------------------------------------------------------
+
+; Points to default cache instance to be used. Optional is only one cache is defined
+resources.doctrine.cache.defaultCacheInstance = default
+
+; Cache Instance configuration for "default" cache
+;resources.doctrine.cache.instances.default.id = default
+resources.doctrine.cache.instances.default.adapterClass = "Doctrine\Common\Cache\MemcacheCache"
+resources.doctrine.cache.instances.default.namespace    = "Application_"
+resources.doctrine.cache.instances.default.options.servers.0.host = localhost
+resources.doctrine.cache.instances.default.options.servers.0.port = 11211
+;resources.doctrine.cache.instances.default.options.servers.0.persistent    = true
+;resources.doctrine.cache.instances.default.options.servers.0.weight        = 1
+;resources.doctrine.cache.instances.default.options.servers.0.timeout       = 1
+;resources.doctrine.cache.instances.default.options.servers.0.retryInterval = 15
+;resources.doctrine.cache.instances.default.options.servers.0.status        = true
+
+; Cache Instance configuration example for "default" FilesystemCache
+;resources.doctrine.cache.instances.default.adapterClass = "Doctrine\Common\Cache\FilesystemCache"
+;resources.doctrine.cache.instances.default.namespace    = "Application_"
+;resources.doctrine.cache.instances.default.options.directory    = "/tmp/doctrine"
+;resources.doctrine.cache.instances.default.options.extension    = ".doctrinecache.data"
+
+; ------------------------------------------------------------------------------
+; Doctrine DBAL Configuration
+; ------------------------------------------------------------------------------
+
+; Points to default connection to be used. Optional if only one connection is defined
+resources.doctrine.dbal.defaultConnection = default
+
+; DBAL Connection configuration for "default" connection
+;resources.doctrine.dbal.connections.default.id = default
+;resources.doctrine.dbal.connections.default.eventManagerClass  = "Doctrine\Common\EventManager"
+;resources.doctrine.dbal.connections.default.eventSubscribers[] = "DoctrineExtensions\Sluggable\SluggableSubscriber"
+;resources.doctrine.dbal.connections.default.configurationClass = "Doctrine\DBAL\Configuration"
+;resources.doctrine.dbal.connections.default.sqlLoggerClass     = "Doctrine\DBAL\Logging\EchoSQLLogger"
+;resources.doctrine.dbal.connections.default.sqlLoggerParams    = ""; whatever your logger requires
+;resources.doctrine.dbal.connections.default.types.my_type      = "Application\DBAL\Type\MyType"
+
+; Database configuration
+;resources.doctrine.dbal.connections.default.parameters.wrapperClass = ""
+resources.doctrine.dbal.connections.default.parameters.driver   = "pdo_mysql"
+resources.doctrine.dbal.connections.default.parameters.dbname   = "fmm"
+resources.doctrine.dbal.connections.default.parameters.host = "localhost"
+resources.doctrine.dbal.connections.default.parameters.port = 3306
+resources.doctrine.dbal.connections.default.parameters.user = "root"
+resources.doctrine.dbal.connections.default.parameters.password = "password"
+;resources.doctrine.dbal.connections.default.parameters.driverOptions.ATTR_USE_BUFFERED_QUERIES = true
+
+
+; ------------------------------------------------------------------------------
+; Doctrine ORM Configuration
+; ------------------------------------------------------------------------------
+
+; Points to default EntityManager to be used. Optional if only one EntityManager is defined
+resources.doctrine.orm.defaultEntityManager = default
+
+; EntityManager configuration for "default" manager
+;resources.doctrine.orm.entityManagers.default.id = default
+;resources.doctrine.orm.entityManagers.default.entityManagerClass   = "Doctrine\ORM\EntityManager"
+;resources.doctrine.orm.entityManagers.default.configurationClass   = "Doctrine\ORM\Configuration"
+;resources.doctrine.orm.entityManagers.default.defaultRepositoryClass   = "Doctrine\ORM\EntityRepository"
+;resources.doctrine.orm.entityManagers.default.entityNamespaces.app = "Application\Entity"
+resources.doctrine.orm.entityManagers.default.connection     = default
+resources.doctrine.orm.entityManagers.default.proxy.autoGenerateClasses = true
+resources.doctrine.orm.entityManagers.default.proxy.namespace           = "Application\Entity\Proxy"
+resources.doctrine.orm.entityManagers.default.proxy.dir                 = APPLICATION_PATH "/../library/Application/Entity/Proxy"
+;resources.doctrine.orm.entityManagers.default.metadataCache = default
+;resources.doctrine.orm.entityManagers.default.queryCache    = default
+;resources.doctrine.orm.entityManagers.default.resultCache   = default
+;resources.doctrine.orm.entityManagers.default.DQLFunctions.numeric.PI = "DoctrineExtensions\ORM\Query\Functions\Numeric\PiFunction"
+resources.doctrine.orm.entityManagers.default.metadataDrivers.annotationRegistry.annotationFiles[]     = APPLICATION_PATH "/../library/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/DoctrineAnnotations.php"
+;resources.doctrine.orm.entityManagers.default.metadataDrivers.annotationRegistry.annotationNamespaces.0.namespace   = "Gedmo"
+;resources.doctrine.orm.entityManagers.default.metadataDrivers.annotationRegistry.annotationNamespaces.0.includePath = APPLICATION_PATH "/../library/vendor"
+resources.doctrine.orm.entityManagers.default.metadataDrivers.drivers.0.adapterClass          = "Doctrine\ORM\Mapping\Driver\AnnotationDriver"
+resources.doctrine.orm.entityManagers.default.metadataDrivers.drivers.0.mappingNamespace      = "Application\Entity"
+resources.doctrine.orm.entityManagers.default.metadataDrivers.drivers.0.mappingDirs[]         = APPLICATION_PATH "/../library/Application/Entity"
+resources.doctrine.orm.entityManagers.default.metadataDrivers.drivers.0.annotationReaderClass = "Doctrine\Common\Annotations\AnnotationReader"
+resources.doctrine.orm.entityManagers.default.metadataDrivers.drivers.0.annotationReaderCache = default
+;resources.doctrine.orm.entityManagers.default.metadataDrivers.drivers.0.annotationReaderNamespaces.App = "Application\DoctrineExtensions\ORM\Mapping"
+resources.doctrine.orm.entityManagers.default.secondLevelCache.enabled = TRUE
+resources.doctrine.orm.entityManagers.default.secondLevelCache.loggerClass = "Doctrine\ORM\Cache\Logging\StatisticsCacheLogger"
+
+; DocumentManager configuration for "default" manager
+resources.doctrine.odm.documentManagers.default.documentManagerClass 		= "Doctrine\ODM\MongoDB\DocumentManager"
+resources.doctrine.odm.documentManagers.default.connectionString 			= "mongodb://localhost"
+resources.doctrine.odm.documentManagers.default.type 						= "MongoDB"
+resources.doctrine.odm.documentManagers.default.proxy.autoGenerateClasses 	= true
+resources.doctrine.odm.documentManagers.default.proxy.namespace 			= "DocumentProxy"
+resources.doctrine.odm.documentManagers.default.proxy.dir 					= APPLICATION_PATH "/data/doctrineDocumentProxies/Proxy"
+resources.doctrine.odm.documentManagers.default.hydrator.dir 				= APPLICATION_PATH "/data/hydrator"
+resources.doctrine.odm.documentManagers.default.hydrator.namespace 			= "Hydrators"
+resources.doctrine.odm.documentManagers.default.metadataDrivers.annotationRegistry.annotationFiles[] = "Doctrine/ODM/MongoDB/Mapping/Annotations/DoctrineAnnotations.php"
+resources.doctrine.odm.documentManagers.default.metadataDrivers.drivers.0.adapterClass 				 = "Doctrine\ODM\MongoDB\Mapping\Driver\AnnotationDriver"
+resources.doctrine.odm.documentManagers.default.metadataDrivers.drivers.0.mappingNamespace 			 = "Application\Document"
+resources.doctrine.odm.documentManagers.default.metadataDrivers.drivers.0.mappingDirs[] 			 = APPLICATION_PATH "/../library/Application/Entity"
+resources.doctrine.odm.documentManagers.default.metadataDrivers.drivers.0.annotationReaderClass 	 = "Doctrine\Common\Annotations\AnnotationReader"
+resources.doctrine.odm.documentManagers.default.metadataDrivers.drivers.0.annotationReaderCache 	 = "annotationCacheODM"
+
+[staging : production]
+
+
+[testing : production]
+phpSettings.display_startup_errors = 1
+phpSettings.display_errors = 1
+
+
+[development : production]
+phpSettings.display_startup_errors = 1
+phpSettings.display_errors = 1
+resources.frontController.params.displayExceptions = 1

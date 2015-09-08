@@ -1,0 +1,157 @@
+<?php
+namespace Raman;
+
+use Raman\Config\Raman_Config_Define;
+class AutoLoader
+{
+	/**
+	 * 
+	 * @var \Zend_Application_Bootstrap_Bootstrap
+	 */
+	protected $_bootstrap;
+	
+	/**
+	 * @param \Zend_Application_Bootstrap_Bootstrap $bootstrap
+	 */
+	public function __construct($bootstrap)
+	{
+		$this->_bootstrap 	= $bootstrap;	
+	}
+	
+	public function init()
+	{							
+		mb_internal_encoding("UTF-8");
+		date_default_timezone_set('UTC');
+		
+		$this->addAutoLoader();
+		$this->includePaths();
+		$this->pluginLoader();
+		$this->initView();
+		$this->initRoutes();
+		$this->initSecurity();
+		$this->initDoctrine();		
+		$this->initFrontControllerOutput();		
+	}	
+	
+	/**
+	 * Add Raman Autoloader
+	 * Add Vendor Autoloader
+	 */
+	protected function addAutoLoader()
+	{								
+		include_once 'Raman/AutoLoader.php';
+
+		spl_autoload_register('\Raman\autoload');					
+	}			
+	
+	protected function includePaths()
+	{
+		// Vendor
+		ini_set('include_path', ini_get('include_path') . PATH_SEPARATOR . __DIR__ . DIRECTORY_SEPARATOR . 'Vendor' . DIRECTORY_SEPARATOR);		
+		
+		// Add Entity to include path
+		ini_set('include_path', ini_get('include_path') . PATH_SEPARATOR . APPLICATION_PATH . DIRECTORY_SEPARATOR . 'Entity' . DIRECTORY_SEPARATOR);
+	
+		// Add Models to include path
+		ini_set('include_path', ini_get('include_path') . PATH_SEPARATOR . APPLICATION_PATH . DIRECTORY_SEPARATOR . 'models' . DIRECTORY_SEPARATOR);
+	
+		// Add Forms to include path
+		ini_set('include_path', ini_get('include_path') . PATH_SEPARATOR . APPLICATION_PATH . DIRECTORY_SEPARATOR . 'forms' . DIRECTORY_SEPARATOR);
+	}
+	
+	
+	protected function pluginLoader()
+	{
+		
+	}
+	
+	protected function initView()
+	{
+		$view = new \Zend_View();
+		$view->setEncoding('UTF-8');
+		$view->doctype('XHTML1_STRICT');
+	
+		$view->headMeta()->appendHttpEquiv('Content-Type', 'text/html;charset=utf-8');
+	
+		$view->headLink()->appendStylesheet(ROOT_URL . 'libPlugins/bootstrap/css/bootstrap.min.css')
+		->appendStylesheet(ROOT_URL . 'libPlugins/bootstrap/css/bootstrap-theme.min.css')
+		->appendStylesheet(ROOT_URL . 'libPlugins/bootstrap-dialog/css/bootstrap-dialog.min.css')
+		->appendStylesheet(ROOT_URL . 'libCss/Raman/Form-Responsive.css');
+	
+		$view->headScript()->appendFile(ROOT_URL . 'libJs/jquery-1.11.1.min.js')
+		->appendFile(ROOT_URL . 'libPlugins/bootstrap/js/bootstrap.min.js')
+		->appendFile(ROOT_URL . 'libPlugins/bootstrap-dialog/js/bootstrap-dialog.min.js');
+			
+	
+		\Zend_Registry::set('view', $view);
+	}
+	
+	protected function initRoutes()
+	{
+		$front = \Zend_Controller_Front::getInstance();
+		$router = $front->getRouter();
+		 
+		/*
+		 * Route Ajax Requests
+		*/
+		$router->addRoute('ajaxHandler', new \Zend_Controller_Router_Route('/:controller/ajax/:request/', array(
+				'controller' 	=> ':controller',
+				'action' 		=> 'ajax'
+		)));
+		 
+		$router->addRoute('ajaxHandlerModules', new \Zend_Controller_Router_Route('/:module/:controller/ajax/:request/', array(
+				'module' 		=> ':module',
+				'controller' 	=> ':controller',
+				'action' 		=> 'ajax'
+		)));
+	}
+	
+	protected function initSecurity()
+	{
+		new \Raman\Security\Raman_Security_Xss($this->_bootstrap);
+		new \Raman\Security\Raman_Security_Csrf();
+	}
+	
+	protected function initDoctrine()
+	{
+		/* Using Doctrine with Bisna */
+		
+		$doctrine 	= $this->_bootstrap->getResource('doctrine');
+		
+		\Zend_Registry::set('doctrine', $doctrine);
+	}		
+	
+	protected function initFrontControllerOutput()
+	{
+		$this->_bootstrap->bootstrap('FrontController');
+		$frontController = $this->_bootstrap->getResource('FrontController');
+		
+		$response = new \Zend_Controller_Response_Http;
+		$response->setHeader('Content-Type', 'text/html; charset=UTF-8', true);
+		$frontController->setResponse($response);
+		
+		return $frontController;
+	}
+}
+
+function autoload($className)
+{
+	$extensions 	= array(".php");//acceptable extentions
+	$includePaths 	= explode(PATH_SEPARATOR, get_include_path());//include paths
+	$exNameSpace 	= explode('\\', $className);//explode class name
+	$pureClassName 	= $exNameSpace[sizeof($exNameSpace) - 1];// get class name witout its namespace
+	$relativePath 	= str_replace("_" , DIRECTORY_SEPARATOR, $pureClassName);//the class path from include path
+
+	foreach ($includePaths as $iPaths)
+	{
+		$absolutePath = $iPaths . DIRECTORY_SEPARATOR . $relativePath;	//absolute class path		
+		foreach ($extensions as $ext)
+		{
+			if (is_readable($absolutePath . $ext))
+			{
+				require_once $absolutePath . $ext;				
+				break;
+			}
+		}
+	}
+}

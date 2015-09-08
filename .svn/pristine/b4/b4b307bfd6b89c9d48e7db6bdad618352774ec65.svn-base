@@ -1,0 +1,57 @@
+<?php
+namespace Raman;
+
+/**
+ * @author Mostafa Lavaei <lavaei@ramansoft.co>
+ * @version 1.0
+ */
+class Raman_Translate extends \Zend_Translate
+{
+	const SOURCE_PATH = 'Translate/Languages/';
+	
+	
+	public function __construct($options = array())
+	{
+		parent::__construct($options);
+		
+		$this->init();
+	}
+	
+	/**
+	 * Adding English & Persian as default languages.
+	 * You can add more language by overriding this function
+	 */
+	public function init()
+	{
+		$this->addEnglish();
+		$this->addPersian();
+	}
+	
+	/**
+	 * Adding English language
+	 */
+	public function addEnglish()
+	{
+		$this->addTranslation(
+				array(
+						'adapter' 	=> 'gettext',
+						'content' 	=> self::SOURCE_PATH . 'en.mo',
+						'locale' 	=> 'en'
+				)
+		);
+	}
+	
+	/**
+	 * Adding Persian language
+	 */
+	public function addPersian()
+	{
+		$this->addTranslation(
+				array(
+						'adapter' 	=> 'gettext',
+						'content' 	=> self::SOURCE_PATH . 'fa.mo',
+						'locale' 	=> 'fa'
+				)
+		);
+	}
+}

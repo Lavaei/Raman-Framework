@@ -1,0 +1,3 @@
+#!/bin/sh
+./configure     --with-ecsrc='../trunk'     --with-xsltproc='/bin/xsltproc'     --with-xmllint='/bin/xmllint'     --with-fop='/bin/fop'
+

@@ -1,0 +1,171 @@
+<?php
+namespace Raman\Config;
+
+/**
+ * Define Application Variables
+ * @author Mostafa Lavaei <lavaei@ramansoft.co>
+ * @version 1.0
+ */
+class Raman_Config_Define
+{
+	const LANGUAGE_NAME_ENGLISH 	= 'en';
+	const LANGUAGE_NAME_PERSIAN 	= 'fa';
+	
+	/**
+	 * Set parameters for database connection
+	 * @param string $username
+	 * @param string $password
+	 * @param string $name
+	 * @param string $server
+	 */
+	public static function setDatabase($username, $password, $name, $server='localhost')
+	{
+		define('DATABASE_USERNAME'	, $username);
+		define('DATABASE_PASSWORD'	, $password);
+		define('DATABASE_NAME'		, $name);
+		define('DATABASE_SERVER'	, $server);		
+	}
+	
+	/**
+	 * Set website path with protocol
+	 * @param string $rootUrl
+	 */
+	public static function setRootUrl($rootUrl)
+	{
+		/*
+		 * ROOT_URL end with '/'
+		 * this line correct it if not
+		 */
+		$rootUrl = trim($rootUrl, '/') . '/';
+		
+		/*
+		 * Add protocol if not defined
+		 */
+		preg_match("@^([^/]*//).*$@", $rootUrl, $matches);//check if protocol has been defined
+		
+		if(!$matches[1])
+		{
+			$rootUrl = 'http://' . $rootUrl;
+		}
+
+		
+		define('ROOT_URL'	, $rootUrl);
+	}
+	
+	/**
+	 * Set website path with a secure protocol(ex. https//)
+	 * @param string $rootUrl
+	 */
+	public static function setSecureRootUrl($rootUrl)
+	{
+		/*
+		 * ROOT_URL end with '/'
+		 * this line correct it if not
+		 */
+		$rootUrl = trim($rootUrl, '/') . '/';
+		
+		/*
+		 * Add protocol if not defined
+		 */
+		preg_match("@^([^/]*//).*$@", $rootUrl, $matches);//check if protocol has been defined
+		
+		if(!$matches[1])
+		{
+			$rootUrl = 'https://' . $rootUrl;
+		}
+		
+		
+		define('ROOT_URL'	, $rootUrl);
+	}	
+	
+	/**
+	 * Set default protocol for site
+	 * @param string $protocol
+	 */
+	public static function setDefaultProtocol($protocol)
+	{
+		define('DEFAULT_PROTOCOL'	, $protocol);
+	}
+	
+	/**
+	 * Use for description meta tag. Description will shown in the search engines pages
+	 * @param string $description
+	 */
+	public static function setDescription($description)
+	{
+		define('DESCRIPTION', $description);
+	}	
+	
+	/**
+	 * Use for keywords meta tag
+	 * @param array $keywords
+	 */
+	public static function setKeywords(array $keywords)
+	{
+		foreach ($keywords as $keyword)
+			$str .= "$keyword,";
+		
+		$str = trim($str, ',');
+		
+		define('KEYWORDS', $str);
+	}
+	
+	/**
+	 * Use for helping search engines and spiders to find pages and know which pages should not be indexed
+	 * @param string $robots
+	 */
+	public static function setRobotsHelper($robots)
+	{
+		define('ROBOTS', $robots);
+	}
+	
+	/**
+	 * Set site language
+	 * @param string $language
+	 */
+	public static function setLanguage($language)
+	{
+		define('LANGUAGE', $language);
+	}
+	
+	
+	/**
+	 * Use it for add this site to your webmaster tools
+	 * @param string $code
+	 */
+	public static function setWebmasterTools($code)
+	{		
+		define('WEBMASTER', $code);
+	}
+	
+	/**
+	 * Use for author meta tag
+	 * @param string $author
+	 */
+	public static function setSiteAuthors($authors)
+	{
+		define('AUTHORS', $authors);
+	}
+	
+	/**
+	 * Set page title
+	 * @param string $title
+	 * @param string $seperator
+	 */
+	public static function setSiteTitle($title, $seperator)
+	{
+		define('TITLE', $title);
+		define('SITE_SEPERATOR', $seperator);
+	}
+	
+	/**
+	 * 
+	 * @param string $server Path to the piwik server
+	 * @param int $id The site id in the piwik server
+	 */
+	public static function setPiwik($server, $id)
+	{
+		define('PIWIK_ADDRESS', $server);
+		define('PIWIK_SITE_ID', $id);		
+	}
+}

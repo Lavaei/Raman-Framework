@@ -1,0 +1,1209 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: LatidanCore\n"
+"POT-Creation-Date: 2015-06-04 23:17+0330\n"
+"PO-Revision-Date: 2015-06-06 00:14+0330\n"
+"Last-Translator: Mostafa Lavaei <lavaei@ramansoft.co>\n"
+"Language-Team: Ramansoft <Web@Ramansoft.Co>\n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.6\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../Languages/src/ErrorMessages.php:6
+msgid "ERROR_403_FORBIDDEN"
+msgstr "شما اجازه دسترسی به این تاربرگ را ندارید."
+
+#: ../Languages/src/ErrorMessages.php:12
+msgid "ERROR_404_NOTFOUND"
+msgstr "تاربرگ مورد نظر وجود ندارد."
+
+#: ../Languages/src/ErrorMessages.php:18
+msgid "ERROR_500_APPERROR"
+msgstr "متاسفانه خطایی در سایت به وجود آمده است. لطفا دقایقی دیگر درخواست خود را دوباره تکرار کنید و در صورت ادامه مشکل، با پشتیبانی تماس حاصل فرمایید."
+
+#: ../Languages/src/ErrorMessages.php:24
+msgid "ERROR_LATIDAN_IS_FAKE"
+msgstr "لاتیدان شما اصل نمی باشد. برای سفارش لاتیدان به http://ramansoft.co مراجعه فرمایید."
+
+#: ../Languages/src/ErrorMessages.php:29
+msgid "ERROR_USER_DISABLED"
+msgstr "حساب کاربری شما به دلیل نقض قوانین غیر فعال شده است. در صورتی که فکر می کنید حساب کاربری شما به اشتباه غیر فعال شده است با پشتیبانی تماس بگیرید."
+
+#: ../Languages/src/ErrorMessages.php:35
+msgid "ERROR_USER_NOT_ACTIVATE"
+msgstr "حساب کاربری شما فعال نمی باشد."
+
+#: ../Languages/src/ErrorMessages.php:41
+msgid "ERROR_USER_REQUIRED_VALIDATION"
+msgstr "حساب کاربری شما نیازمند تایید مدیر می باشد."
+
+#: ../Languages/src/ErrorMessages.php:48
+msgid "ERROR_USER_REQUIRED_ACTIVATION"
+msgstr "حساب کاربری شما نیازمند کد فعال سازی می باشد. کد فعال سازی به رایانامه یا تلفن همراه شما ارسال شده است. در صورتی که کدی دریافت نکرده اید  با پشتیبانی تماس بگیرید."
+
+#: ../Languages/src/ErrorMessages.php:54
+msgid "ERROR_LATIDAN_ABUSE"
+msgstr "وب سایت شما به دلیل نقض قوانین تعلیق شده است. لطفا با پشتیبانی تماس بگیرید."
+
+#: ../Languages/src/ErrorMessages.php:60
+msgid "ERROR_LATIDAN_LIMIT_VISITOR"
+msgstr "تعداد بازدیدکنندگان سایت شما بیشتر از حد مجاز می باشد. برای تغییر قرارداد با پشتیبانی تماس بگیرید."
+
+#: ../Languages/src/ErrorMessages.php:66
+msgid "ERROR_LATIDAN_LIMIT_EXPIRE"
+msgstr "قرارداد سرویس دهی لاتیدان به پایان رسیده است. لطفا جهت تمدید آن اقدام فرمایید."
+
+#: ../Languages/src/ErrorMessages.php:72
+msgid "ERROR_LATIDAN_LIMIT_BANDWIDTH"
+msgstr "پهنای باند مصرفی شما بیشتر از حد مجاز می باشد. برای افزایش حد مجاز با پشتیبانی تماس بگیرید."
+
+#: ../Languages/src/ErrorMessages.php:78
+msgid "ERROR_SUPPORT_EXPIRE"
+msgstr "قرارداد پشتیبانی شما منقضی شده است. لطفا جهت تمدید با پشتیبانی تماس بگیرید."
+
+#: ../Languages/src/ErrorMessages.php:84
+msgid "ERROR_CONFIRM_PASSWORD"
+msgstr "رمز عبور و تکرار آن باهم هم خوانی ندارند."
+
+#: ../Languages/src/ErrorMessages.php:90
+msgid "ERROR_DOWNLOAD_FAILED"
+msgstr "متاسفانه خطایی در حین دانلود اطلاعات به وجود آمده است."
+
+#: ../Languages/src/ErrorMessages.php:96
+msgid "ERROR_EMPTY_INPUTS"
+msgstr "لطفا تمام ورودی های ضروری را پر نمایید."
+
+#: ../Languages/src/ErrorMessages.php:102
+msgid "ERROR_FILE_NOTFOUND"
+msgstr "فایل مورد نظر پیدا نشد"
+
+#: ../Languages/src/ErrorMessages.php:108
+msgid "ERROR_INACTIVE_PAGE"
+msgstr "صفحه مورد نظر غیر فعال شده است"
+
+#: ../Languages/src/ErrorMessages.php:114
+msgid "ERROR_INVALID_FORM_INPUT"
+msgstr "وارد شده صحیح نمی باشد"
+
+#: ../Languages/src/ErrorMessages.php:119
+msgid "ERROR_INVALID_INPUTS"
+msgstr "اطلاعات وارد شده صحیح نمی باشند"
+
+#: ../Languages/src/ErrorMessages.php:125
+msgid "ERROR_SIGNIN_FAILED"
+msgstr "اطلاعات ورود اشتباه است. اگر اطلاعات مورد نیاز برای ورود را فراموش کرده اید جهت بازیابی آنها، از بخش بازیابی حساب کاربری اقدام نمایید."
+
+#: ../Languages/src/ErrorMessages.php:131
+msgid "ERROR_SIGNIN_REQUIRED"
+msgstr "برای انجام این کار باید عضو سایت شوید و یا در صورت عضو بودن، وارد حساب کاربری خود شوید."
+
+#: ../Languages/src/ErrorMessages.php:137
+msgid "ERROR_NO_SELECTED_DIR"
+msgstr "لطفا یک پوشه را انتخاب کنید و دوباره امتحان کنید."
+
+#: ../Languages/src/ErrorMessages.php:143
+msgid "ERROR_NOT_DONE"
+msgstr "متاسفانه عملیات مورد نظر انجام نشد."
+
+#: ../Languages/src/ErrorMessages.php:149
+msgid "ERROR_NOT_DELETED"
+msgstr "متاسفانه خطایی در حین انجام عملیات حذف به وجود آمده است."
+
+#: ../Languages/src/ErrorMessages.php:155
+msgid "ERROR_NOT_INSERTED"
+msgstr "متاسفانه خطایی در حین انجام عملیات درج به وجود آمده است."
+
+#: ../Languages/src/ErrorMessages.php:161
+msgid "ERROR_NOT_UPDATED"
+msgstr "متاسفانه خطایی در حین انجام عملیات ویرایش به وجود آمده است."
+
+#: ../Languages/src/ErrorMessages.php:168
+msgid "ERROR_BACKUP_NOT_DONE"
+msgstr "متاسفانه خطایی در حین پشتیبان گیری به وجود آمده است."
+
+#: ../Languages/src/ErrorMessages.php:174
+msgid "ERROR_RESTORE_NOT_DONE"
+msgstr "متاسفانه خطایی در حین بازیابی به وجود آمده است."
+
+#: ../Languages/src/ErrorMessages.php:181
+msgid "ERROR_ALREADY_EXIST"
+msgstr "وارد شده موجود می باشد."
+
+#: ../Languages/src/ErrorMessages.php:186
+msgid "ERROR_UNKNOWN"
+msgstr "متاسفانه خطای غیر منتظره ای رخ داده است."
+
+#: ../Languages/src/ErrorMessages.php:192
+msgid "ERROR_PAY_FAILED"
+msgstr ""
+
+#: ../Languages/src/ErrorMessages.php:198
+msgid "ERROR_UNSUPPORT_GATEWAY"
+msgstr ""
+
+#: ../Languages/src/ErrorMessages.php:204
+msgid "ERROR_SITE_UPDATE_FAILED"
+msgstr ""
+
+#: ../Languages/src/ErrorMessages.php:210
+msgid "ERROR_YOU_ALREADY_HAVE_ACCOUNT"
+msgstr ""
+
+#: ../Languages/src/Forms.php:2
+msgid "BUTTON_ADD"
+msgstr ""
+
+#: ../Languages/src/Forms.php:3
+msgid "BUTTON_EDIT"
+msgstr ""
+
+#: ../Languages/src/Forms.php:4
+msgid "BUTTON_DELETE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:5
+msgid "BUTTON_SAVE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:6
+msgid "BUTTON_CANCLE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:7
+msgid "LABEL_DOWNLOAD"
+msgstr ""
+
+#: ../Languages/src/Forms.php:8
+msgid "LABEL_CLOSE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:9
+msgid "LABEL_CREATE_BACKUP"
+msgstr ""
+
+#: ../Languages/src/Forms.php:10
+msgid "LABEL_TITLE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:11
+msgid "LABEL_SUB_TITLE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:12
+msgid "LABEL_LINK"
+msgstr ""
+
+#: ../Languages/src/Forms.php:13
+msgid "BUTTON_SELECT"
+msgstr ""
+
+#: ../Languages/src/Forms.php:14
+msgid "LABEL_HOW_TO_CONTACT_US"
+msgstr ""
+
+#: ../Languages/src/Forms.php:15
+msgid "OPTION_SELECT_ONE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:16
+msgid "OPTION_ADDRESS"
+msgstr ""
+
+#: ../Languages/src/Forms.php:17
+msgid "OPTION_PHONE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:18
+msgid "OPTION_FAX"
+msgstr ""
+
+#: ../Languages/src/Forms.php:19
+msgid "OPTION_EMAIL"
+msgstr ""
+
+#: ../Languages/src/Forms.php:20
+msgid "OPTION_SITE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:21
+msgid "LABEL_NAME_FAMILY"
+msgstr ""
+
+#: ../Languages/src/Forms.php:22
+msgid "LABEL_SUBJECT"
+msgstr ""
+
+#: ../Languages/src/Forms.php:23
+msgid "LABEL_MESSAGE_CONTENT"
+msgstr ""
+
+#: ../Languages/src/Forms.php:24
+msgid "LABEL_SECURITY_CODE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:25
+msgid "LABEL_CONTENT"
+msgstr ""
+
+#: ../Languages/src/Forms.php:26
+msgid "LABEL_IMAGE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:27
+msgid "LABEL_DATE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:28
+msgid "LABEL_REASON"
+msgstr ""
+
+#: ../Languages/src/Forms.php:29
+msgid "LABEL_RESTORE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:30
+msgid "LABEL_REFRESH_PAGE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:31
+msgid "LABEL_NAME"
+msgstr ""
+
+#: ../Languages/src/Forms.php:32
+msgid "LABEL_TEMPLATE_INSTALLER"
+msgstr ""
+
+#: ../Languages/src/Forms.php:33
+msgid "BUTTON_INSTALL"
+msgstr ""
+
+#: ../Languages/src/Forms.php:34
+msgid "BUTTON_UPDATE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:35
+msgid "LABEL_TEMPLATE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:36
+msgid "LABEL_SITE_TITLE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:37
+msgid "LABEL_SITE_TITLE_SEPARATOR"
+msgstr ""
+
+#: ../Languages/src/Forms.php:38
+msgid "LABEL_SITE_EXPLAIN"
+msgstr ""
+
+#: ../Languages/src/Forms.php:39
+msgid "LABEL_LANGUAGE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:40
+msgid "LABEL_USE_CACHE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:41
+msgid "LABEL_VERSION"
+msgstr ""
+
+#: ../Languages/src/Forms.php:42
+msgid "LABEL_WARNING"
+msgstr ""
+
+#: ../Languages/src/Forms.php:43
+msgid "BUTTON_BUY"
+msgstr ""
+
+#: ../Languages/src/Forms.php:44
+msgid "BUTTON_SHOW_FEATURES"
+msgstr ""
+
+#: ../Languages/src/Forms.php:45
+msgid "BUTTON_CONTACT_US"
+msgstr ""
+
+#: ../Languages/src/Forms.php:46
+msgid "BUTTON_RE_NEW"
+msgstr ""
+
+#: ../Languages/src/Forms.php:47
+msgid "LABEL_ERROR"
+msgstr ""
+
+#: ../Languages/src/Forms.php:48
+msgid "BUTTON_HELP"
+msgstr ""
+
+#: ../Languages/src/Forms.php:49
+msgid "BUTTON_CHANGE_LOG"
+msgstr ""
+
+#: ../Languages/src/Forms.php:50
+msgid "LABEL_ID"
+msgstr ""
+
+#: ../Languages/src/Forms.php:51
+msgid "LABEL_STATUS"
+msgstr ""
+
+#: ../Languages/src/Forms.php:52
+msgid "LABEL_ACTIVE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:53
+msgid "LABEL_INACTIVE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:54
+msgid "LABEL_MODULE_INSTALLER"
+msgstr ""
+
+#: ../Languages/src/Forms.php:55
+msgid "BUTTON_MARK_AS_READ"
+msgstr ""
+
+#: ../Languages/src/Forms.php:56
+msgid "BUTTON_CREATE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:57
+msgid "OPTION_MODULE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:58
+msgid "OPTION_FORM"
+msgstr ""
+
+#: ../Languages/src/Forms.php:59
+msgid "OPTION_OTHER"
+msgstr ""
+
+#: ../Languages/src/Forms.php:60
+msgid "OPTION_COMPONENT"
+msgstr ""
+
+#: ../Languages/src/Forms.php:61
+msgid "OPTION_ADMINS"
+msgstr ""
+
+#: ../Languages/src/Forms.php:62
+msgid "OPTION_USERS"
+msgstr ""
+
+#: ../Languages/src/Forms.php:63
+msgid "OPTION_GUESTS"
+msgstr ""
+
+#: ../Languages/src/Forms.php:64
+msgid "LABEL_EXTERNAL_LINK"
+msgstr ""
+
+#: ../Languages/src/Forms.php:65
+msgid "LABEL_INTERNAL_LINK"
+msgstr ""
+
+#: ../Languages/src/Forms.php:66
+msgid "OPTION_NO"
+msgstr ""
+
+#: ../Languages/src/Forms.php:67
+msgid "OPTION_YES"
+msgstr ""
+
+#: ../Languages/src/Forms.php:68
+msgid "LABEL_ACCESS_LEVEL"
+msgstr ""
+
+#: ../Languages/src/Forms.php:69
+msgid "LABEL_WATER_MARK"
+msgstr ""
+
+#: ../Languages/src/Forms.php:70
+msgid "LABEL_WATER_MARK_COLOR"
+msgstr ""
+
+#: ../Languages/src/Forms.php:71
+msgid "LABEL_WATER_MARK_TEXT"
+msgstr ""
+
+#: ../Languages/src/Forms.php:72
+msgid "LABEL_WATER_MARK_FONT"
+msgstr ""
+
+#: ../Languages/src/Forms.php:73
+msgid "LABEL_WATER_MARK_SIZE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:74
+msgid "LABEL_WATER_MARK_ALPHA"
+msgstr ""
+
+#: ../Languages/src/Forms.php:75
+msgid "LABEL_INFO"
+msgstr ""
+
+#: ../Languages/src/Forms.php:76
+msgid "BUTTON_BROWSE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:77
+msgid "LABEL_EDIT_ALBUM"
+msgstr ""
+
+#: ../Languages/src/Forms.php:78
+msgid "BUTTON_MARK_AS_UNREAD"
+msgstr ""
+
+#: ../Languages/src/Forms.php:79
+msgid "LABEL_GROUP"
+msgstr ""
+
+#: ../Languages/src/Forms.php:80
+msgid "LABEL_CONTINUE_CONTENT"
+msgstr ""
+
+#: ../Languages/src/Forms.php:81
+msgid "OPTION_PUBLISHED"
+msgstr ""
+
+#: ../Languages/src/Forms.php:82
+msgid "OPTION_UN_PUBLISHED"
+msgstr ""
+
+#: ../Languages/src/Forms.php:83
+msgid "OPTION_NO_SUBJECT"
+msgstr ""
+
+#: ../Languages/src/Forms.php:84
+msgid "LABEL_UNTITLED"
+msgstr ""
+
+#: ../Languages/src/Forms.php:85
+msgid "LABEL_USERNAME"
+msgstr ""
+
+#: ../Languages/src/Forms.php:86
+msgid "LABEL_PASSWORD"
+msgstr ""
+
+#: ../Languages/src/Forms.php:87
+msgid "LABEL_NEW_PASSWORD"
+msgstr ""
+
+#: ../Languages/src/Forms.php:88
+msgid "LABEL_CELLPHONE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:89
+msgid "BUTTON_LOGIN"
+msgstr ""
+
+#: ../Languages/src/Forms.php:90
+msgid "LABEL_PASSWORD_CONFIRM"
+msgstr ""
+
+#: ../Languages/src/Forms.php:91
+msgid "LABEL_LASTNAME"
+msgstr ""
+
+#: ../Languages/src/Forms.php:92
+msgid "LABEL_NATIONAL_CODE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:93
+msgid "LABEL_POST_CODE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:94
+msgid "LABEL_ABOUT_ME"
+msgstr ""
+
+#: ../Languages/src/Forms.php:95
+msgid "LABEL_INTERESTS"
+msgstr ""
+
+#: ../Languages/src/Forms.php:96
+msgid "LABEL_ABILITIES"
+msgstr ""
+
+#: ../Languages/src/Forms.php:97
+msgid "LABEL_INTRODUCER"
+msgstr ""
+
+#: ../Languages/src/Forms.php:98
+msgid "LABEL_COUNTRY"
+msgstr ""
+
+#: ../Languages/src/Forms.php:99
+msgid "LABEL_CITY"
+msgstr ""
+
+#: ../Languages/src/Forms.php:100
+msgid "LABEL_ACTIVATION_EMAIL"
+msgstr ""
+
+#: ../Languages/src/Forms.php:101
+msgid "LABEL_ADMIN_VERIFICATION"
+msgstr ""
+
+#: ../Languages/src/Forms.php:102
+msgid "LABEL_CAPTCHA"
+msgstr ""
+
+#: ../Languages/src/Forms.php:103
+msgid "LABEL_CONFIGS"
+msgstr ""
+
+#: ../Languages/src/Forms.php:104
+msgid "LABEL_TEXT"
+msgstr ""
+
+#: ../Languages/src/Forms.php:105
+msgid "LABEL_VALUES"
+msgstr ""
+
+#: ../Languages/src/Forms.php:106
+msgid "BUTTON_HOME"
+msgstr ""
+
+#: ../Languages/src/Forms.php:107
+msgid "LABEL_PAGE_NOTFOUND"
+msgstr ""
+
+#: ../Languages/src/Forms.php:108
+msgid "LABEL_SITE_SUSPENDED"
+msgstr ""
+
+#: ../Languages/src/Forms.php:109
+msgid "LABEL_DAYS"
+msgstr ""
+
+#: ../Languages/src/Forms.php:110
+msgid "LABEL_LICENCE_EXPIRATION"
+msgstr ""
+
+#: ../Languages/src/Forms.php:111
+msgid "LABEL_FREE_VERSION"
+msgstr ""
+
+#: ../Languages/src/Forms.php:112
+msgid "LABEL_TRIAL_VERSION"
+msgstr ""
+
+#: ../Languages/src/Forms.php:113
+msgid "LABEL_PAYED_VERSION"
+msgstr ""
+
+#: ../Languages/src/Forms.php:114
+msgid "LABEL_DISABLED_VERSION"
+msgstr ""
+
+#: ../Languages/src/Forms.php:115
+msgid "LABEL_MODULE_NAME"
+msgstr ""
+
+#: ../Languages/src/Forms.php:116
+msgid "LABEL_COMPONENT_NAME"
+msgstr ""
+
+#: ../Languages/src/Forms.php:117
+msgid "LABEL_PLACE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:118
+msgid "LABEL_RESULTS"
+msgstr ""
+
+#: ../Languages/src/Forms.php:119
+msgid "BUTTON_CONTINUE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:120
+msgid "BUTTON_BACK"
+msgstr ""
+
+#: ../Languages/src/Forms.php:121
+msgid "LABEL_LOADING"
+msgstr ""
+
+#: ../Languages/src/Forms.php:122
+msgid "LABEL_COPY_LINK"
+msgstr ""
+
+#: ../Languages/src/Forms.php:123
+msgid "LABEL_PATH"
+msgstr ""
+
+#: ../Languages/src/Forms.php:124
+msgid "LABEL_FILE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:125
+msgid "LABEL_NEW_FOLDER"
+msgstr ""
+
+#: ../Languages/src/Forms.php:126
+msgid "LABEL_RENAME"
+msgstr ""
+
+#: ../Languages/src/Forms.php:127
+msgid "LABEL_NEW_USER"
+msgstr ""
+
+#: ../Languages/src/Forms.php:128
+msgid "LABEL_EMAIL_ACTIVATED"
+msgstr ""
+
+#: ../Languages/src/Forms.php:129
+msgid "BUTTON_SIGNUP"
+msgstr ""
+
+#: ../Languages/src/Forms.php:130
+msgid "LABEL_REQUIRED_FIELDS"
+msgstr ""
+
+#: ../Languages/src/Forms.php:131
+msgid "LABEL_OPTIONAL_FIELDS"
+msgstr ""
+
+#: ../Languages/src/Forms.php:132
+msgid "LABEL_EDIT_SLIDESHOW"
+msgstr ""
+
+#: ../Languages/src/Forms.php:133
+msgid "LABEL_FORM_TEXTBOX"
+msgstr ""
+
+#: ../Languages/src/Forms.php:134
+msgid "LABEL_FORM_PASSWORD"
+msgstr ""
+
+#: ../Languages/src/Forms.php:135
+msgid "LABEL_FORM_COMBOBOX"
+msgstr ""
+
+#: ../Languages/src/Forms.php:136
+msgid "LABEL_FORM_CHECKBOX"
+msgstr ""
+
+#: ../Languages/src/Forms.php:137
+msgid "LABEL_FORM_TEXTAREA"
+msgstr ""
+
+#: ../Languages/src/Forms.php:138
+msgid "LABEL_FORM_HTML_TEXTAREA"
+msgstr ""
+
+#: ../Languages/src/Forms.php:139
+msgid "LABEL_FORM_SUBMIT"
+msgstr ""
+
+#: ../Languages/src/Forms.php:140
+msgid "LABEL_FORM_RESET"
+msgstr ""
+
+#: ../Languages/src/Forms.php:141
+msgid "LABEL_PAGE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:142
+msgid "LABEL_SIDE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:143
+msgid "LABEL_FOOTER"
+msgstr ""
+
+#: ../Languages/src/Forms.php:144
+msgid "LABEL_HEADER"
+msgstr ""
+
+#: ../Languages/src/Forms.php:145
+msgid "LABEL_MAINPAGE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:146
+msgid "LABEL_INNER_PAGES"
+msgstr ""
+
+#: ../Languages/src/Forms.php:147
+msgid "LABEL_NO_OUTPUT"
+msgstr ""
+
+#: ../Languages/src/Forms.php:148
+msgid "LABEL_SORT_ORDER"
+msgstr ""
+
+#: ../Languages/src/Forms.php:149
+msgid "LABEL_PROFILE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:150
+msgid "LABEL_LOGOUT"
+msgstr ""
+
+#: ../Languages/src/Forms.php:151
+msgid "LABEL_GENERAL"
+msgstr ""
+
+#: ../Languages/src/Forms.php:152
+msgid "LABEL_AUTO"
+msgstr ""
+
+#: ../Languages/src/Forms.php:153
+msgid "BUTTON_UPLOAD"
+msgstr ""
+
+#: ../Languages/src/Forms.php:154
+msgid "LABEL_SEARCH"
+msgstr ""
+
+#: ../Languages/src/Forms.php:155
+msgid "LABEL_READ_ALL_MESSAGES"
+msgstr ""
+
+#: ../Languages/src/Forms.php:156
+msgid "LABEL_SEE_ALL_NOTIFICATIONS"
+msgstr ""
+
+#: ../Languages/src/Forms.php:157
+msgid "LABEL_ONLINE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:158
+msgid "LABEL_COMMENTS"
+msgstr ""
+
+#: ../Languages/src/Forms.php:159
+msgid "LABEL_MY_COMMENT"
+msgstr ""
+
+#: ../Languages/src/Forms.php:160
+msgid "BUTTON_CHANGE_PICTURE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:161
+msgid "BUTTON_UPLOADING"
+msgstr ""
+
+#: ../Languages/src/Forms.php:162
+msgid "LABEL_CURRENCY"
+msgstr ""
+
+#: ../Languages/src/Forms.php:163
+msgid "LABEL_PRICE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:164
+msgid "LABEL_DESCRIPTION"
+msgstr ""
+
+#: ../Languages/src/Forms.php:165
+msgid "LABEL_ONLINE_PAY"
+msgstr ""
+
+#: ../Languages/src/Forms.php:166
+msgid "LABEL_PHONE_PAY"
+msgstr ""
+
+#: ../Languages/src/Forms.php:167
+msgid "LABEL_POST_PAY"
+msgstr ""
+
+#: ../Languages/src/Forms.php:168
+msgid "LABEL_ETC_PAY"
+msgstr ""
+
+#: ../Languages/src/Forms.php:169
+msgid "LABEL_PAY_METHOD"
+msgstr ""
+
+#: ../Languages/src/Forms.php:170
+msgid "LABEL_NEWPRICE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:171
+msgid "LABEL_PAY_GATEWAY"
+msgstr ""
+
+#: ../Languages/src/Forms.php:172
+msgid "LABEL_WAITING"
+msgstr ""
+
+#: ../Languages/src/Forms.php:173
+msgid "LABEL_VALIDATING"
+msgstr ""
+
+#: ../Languages/src/Forms.php:174
+msgid "LABEL_SENDING"
+msgstr ""
+
+#: ../Languages/src/Forms.php:175
+msgid "LABEL_DELIVERED"
+msgstr ""
+
+#: ../Languages/src/Forms.php:176
+msgid "LABEL_COUNT"
+msgstr ""
+
+#: ../Languages/src/Forms.php:177
+msgid "LABEL_CUSTOMER_NAME"
+msgstr ""
+
+#: ../Languages/src/Forms.php:178
+msgid "LABEL_PRODUCT_DETAILS"
+msgstr ""
+
+#: ../Languages/src/Forms.php:179
+msgid "LABEL_SUM"
+msgstr ""
+
+#: ../Languages/src/Forms.php:180
+msgid "BUTTON_PAY"
+msgstr ""
+
+#: ../Languages/src/Forms.php:181
+msgid "LABEL_ADD_TO_INVOICE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:182
+msgid "BUTTON_INVOICE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:183
+msgid "LABEL_INTERRUPT"
+msgstr ""
+
+#: ../Languages/src/Forms.php:184
+msgid "LABEL_MR_MS"
+msgstr ""
+
+#: ../Languages/src/Forms.php:185
+msgid "LABEL_CREATE_DATE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:186
+msgid "LABEL_RATES_SYSTEM"
+msgstr ""
+
+#: ../Languages/src/Forms.php:187
+msgid "LABEL_OFFLINE_PAY"
+msgstr ""
+
+#: ../Languages/src/Forms.php:188
+msgid "LABEL_MERCHANT_ID"
+msgstr ""
+
+#: ../Languages/src/Forms.php:189
+msgid "LABEL_DELIVERY"
+msgstr ""
+
+#: ../Languages/src/Forms.php:190
+msgid "LABEL_DELIVERY_VIRTUAL"
+msgstr ""
+
+#: ../Languages/src/Forms.php:191
+msgid "LABEL_DELIVERY_REAL"
+msgstr ""
+
+#: ../Languages/src/Forms.php:192
+msgid "LABEL_GIVE_AFTER_PAY"
+msgstr ""
+
+#: ../Languages/src/Forms.php:193
+msgid "LABEL_CLOSE_AFTER_GIVE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:194
+msgid "LABEL_GIVE_FILE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:195
+msgid "LABEL_UPGRADE_ACCOUNT"
+msgstr ""
+
+#: ../Languages/src/Forms.php:196
+msgid "LABEL_NOTHING"
+msgstr ""
+
+#: ../Languages/src/Forms.php:197
+msgid "BUTTON_GENERATE_DOWNLOAD_LINK"
+msgstr ""
+
+#: ../Languages/src/Forms.php:198
+msgid "BUTTON_ORDER"
+msgstr ""
+
+#: ../Languages/src/Forms.php:199
+msgid "LABEL_PORTFOLIO"
+msgstr ""
+
+#: ../Languages/src/Forms.php:200
+msgid "LABEL_FAQ"
+msgstr ""
+
+#: ../Languages/src/Forms.php:201
+msgid "LABEL_ADVICE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:202
+msgid "LABEL_CLICK_HERE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:203
+msgid "LABEL_HOUR"
+msgstr ""
+
+#: ../Languages/src/Forms.php:204
+msgid "LABEL_SITE_EMAIL_NAME"
+msgstr ""
+
+#: ../Languages/src/Forms.php:205
+msgid "LABEL_KEYWORD"
+msgstr ""
+
+#: ../Languages/src/Forms.php:206
+msgid "LABEL_JAVASCRIPT"
+msgstr ""
+
+#: ../Languages/src/Forms.php:207
+msgid "LABEL_TYPE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:208
+msgid "LABEL_FORMAT"
+msgstr ""
+
+#: ../Languages/src/Forms.php:209
+msgid "LABEL_TYPE_VARCHAR"
+msgstr ""
+
+#: ../Languages/src/Forms.php:210
+msgid "LABEL_TYPE_INT"
+msgstr ""
+
+#: ../Languages/src/Forms.php:211
+msgid "LABEL_TYPE_FLOAT"
+msgstr ""
+
+#: ../Languages/src/Forms.php:212
+msgid "LABEL_TYPE_DOUBLE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:213
+msgid "LABEL_TYPE_TIMESTAMP"
+msgstr ""
+
+#: ../Languages/src/Forms.php:214
+msgid "LABEL_TYPE_ENUM"
+msgstr ""
+
+#: ../Languages/src/Forms.php:215
+msgid "LABEL_TYPE_BOOLEAN"
+msgstr ""
+
+#: ../Languages/src/Forms.php:216
+msgid "OPTION_FORM_TEXTFIELD"
+msgstr ""
+
+#: ../Languages/src/Forms.php:217
+msgid "OPTION_FORM_DROPDOWN"
+msgstr ""
+
+#: ../Languages/src/Forms.php:218
+msgid "OPTION_FORM_SLIDER"
+msgstr ""
+
+#: ../Languages/src/Forms.php:219
+msgid "OPTION_FORM_CALENDAR"
+msgstr ""
+
+#: ../Languages/src/Forms.php:220
+msgid "OPTION_FORM_CHECKBOX"
+msgstr ""
+
+#: ../Languages/src/Forms.php:221
+msgid "LABEL_SELECT"
+msgstr ""
+
+#: ../Languages/src/Forms.php:222
+msgid "LABEL_MINIMUM"
+msgstr ""
+
+#: ../Languages/src/Forms.php:223
+msgid "LABEL_MAXIMUM"
+msgstr ""
+
+#: ../Languages/src/Forms.php:224
+msgid "LABEL_CACHE_LIFETIME"
+msgstr ""
+
+#: ../Languages/src/Forms.php:225
+msgid "LABEL_FORM_RADIO"
+msgstr ""
+
+#: ../Languages/src/Forms.php:226
+msgid "LABEL_FORM_UPLOAD"
+msgstr ""
+
+#: ../Languages/src/Forms.php:227
+msgid "BUTTON_INFO_ADD_NEW_RADIO"
+msgstr ""
+
+#: ../Languages/src/Forms.php:228
+msgid "LABEL_CHOICE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:229
+msgid "BUTTON_ADD_CHOICE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:230
+msgid "LABEL_DISABLED_PAY"
+msgstr ""
+
+#: ../Languages/src/Forms.php:231
+msgid "LABEL_WEBMASTER_TOKEN"
+msgstr ""
+
+#: ../Languages/src/Forms.php:232
+msgid "LABEL_LABEL"
+msgstr ""
+
+#: ../Languages/src/Forms.php:233
+msgid "LABEL_REPEAT"
+msgstr ""
+
+#: ../Languages/src/Forms.php:234
+msgid "LABEL_POSITION"
+msgstr ""
+
+#: ../Languages/src/Forms.php:235
+msgid "OPTION_BEFORE_COMPONENTS"
+msgstr ""
+
+#: ../Languages/src/Forms.php:236
+msgid "OPTION_AFTER_COMPONENTS"
+msgstr ""
+
+#: ../Languages/src/Forms.php:237
+msgid "OPTION_BEFORE_EVERY_COMPONENT"
+msgstr ""
+
+#: ../Languages/src/Forms.php:238
+msgid "OPTION_AFTER_EVERY_COMPONENT"
+msgstr ""
+
+#: ../Languages/src/Forms.php:239
+msgid "LABEL_SEE_ALL_POSTS"
+msgstr ""
+
+#: ../Languages/src/Forms.php:240
+msgid "BUTTON_SEND"
+msgstr ""
+
+#: ../Languages/src/Forms.php:241
+msgid "LABEL_YOUR_COMMENT_REPLAY"
+msgstr ""
+
+#: ../Languages/src/Forms.php:242
+msgid "LABEL_COURSE"
+msgstr ""
+
+#: ../Languages/src/Forms.php:243
+msgid "LABEL_USER"
+msgstr ""
+
+#: ../Languages/src/Forms.php:244
+msgid "LABEL_RECOVER_PASSWORD"
+msgstr ""
+
+#: ../Languages/src/SuccessMessages.php:6
+msgid "MESSAGE_BACKUP_DONE"
+msgstr ""
+
+#: ../Languages/src/SuccessMessages.php:12
+msgid "MESSAGE_BACKUP_REASON_QUESTION"
+msgstr ""
+
+#: ../Languages/src/SuccessMessages.php:18
+msgid "MESSAGE_RESTORE_DONE"
+msgstr ""
+
+#: ../Languages/src/SuccessMessages.php:23
+msgid "MESSAGE_MESSAGE_SEND"
+msgstr ""
+
+#: ../Languages/src/SuccessMessages.php:29
+msgid "MESSAGE_INSERTED"
+msgstr ""
+
+#: ../Languages/src/SuccessMessages.php:35
+msgid "MESSAGE_DELETED"
+msgstr ""
+
+#: ../Languages/src/SuccessMessages.php:41
+msgid "MESSAGE_UPDATED"
+msgstr ""
+
+#: ../Languages/src/SuccessMessages.php:47
+msgid "MESSAGE_DONE"
+msgstr ""
+
+#: ../Languages/src/SuccessMessages.php:53
+msgid "MESSAGE_EMAIL_SENT"
+msgstr ""
+
+#: ../Languages/src/SuccessMessages.php:59
+msgid "MESSAGE_FILE_UPLOADED"
+msgstr ""
+
+#: ../Languages/src/SuccessMessages.php:66
+msgid "MESSAGE_SITE_UPDATE_AVAILABLE"
+msgstr ""
+
+#: ../Languages/src/SuccessMessages.php:72
+msgid "MESSAGE_SITE_MODULE_UPDATE_AVAILABLE"
+msgstr ""
+
+#: ../Languages/src/SuccessMessages.php:77
+msgid "MESSAGE_LOGIN_SUCCESS"
+msgstr ""
+
+#: ../Languages/src/SuccessMessages.php:83
+msgid "MESSAGE_LOGOUT_SUCCESSFULLY"
+msgstr ""
+
+#: ../Languages/src/SuccessMessages.php:89
+msgid "MESSAGE_REQUEST_HAS_BEEN_SAVED"
+msgstr ""
+
+#: ../Languages/src/SuccessMessages.php:95
+msgid "MESSAGE_RUN_IN_BACKGROUND"
+msgstr ""
+
+#: ../Languages/src/SuccessMessages.php:100
+msgid "MESSAGE_PAY_SUCCESS"
+msgstr ""
+
+#: ../Languages/src/SuccessMessages.php:106
+msgid "MESSAGE_WELCOME"
+msgstr ""
+
+#: ../Languages/src/SuccessMessages.php:112
+msgid "MESSAGE_SITE_UPDATE_SUCCESS"
+msgstr ""
+
+#: ../Languages/src/SuccessMessages.php:118
+msgid "MESSAGE_SITE_UPDATE_NOTFOUND"
+msgstr ""
