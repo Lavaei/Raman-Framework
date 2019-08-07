@@ -1,5 +1,4 @@
-# Raman
-The PHP Framework
+# Raman Framework (DEPRECATED)
 Raman framework idea is removing css & javascript coding. Many helpers and forms has been designed that generate css & javascripts codes just with php functions. some actions like uploading files, validating forms(with js and php) , etc needs NO CODE!
 What is the advantage? 
 1. Easy designing: Reduce codes and fast programming 
